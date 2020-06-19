@@ -1,0 +1,48 @@
+@media screen and (max-width: 400px) {/* ===================================== MOBILE */
+  .logo {
+    width: 200px;
+}
+footer .footer-middle .col-3:last-child{width: auto;}
+}
+
+@media screen and (max-width: 800px) {/* ===================================== MOBILE */
+  :root{
+  //Font-size
+ --title:30px;
+  --titleh2:25px;
+  --subtitle:20px;
+ --overtitle:15px;
+ --text:16px;
+  }
+  
+  // LAYOUT
+  .max-w{max-width: 92vw;margin: 0 auto}
+  .max-w2{max-width: 92vw;margin: 0 auto}
+  .col-2{max-width: 100%;width: 100%}
+  .mt-g{margin-top: 100px}
+  .col-3{max-width: 92vw;width: 100%}
+  .col-6{max-width: 92vw;width: 100%}
+
+
+
+}
+@media screen and (min-width: 801px) and (max-width: 1050px) {/* ============= TABLETTE */
+  :root{
+  //Font-size
+ --title:35px;
+  --titleh2:28px;
+  --subtitle:25px;
+ --overtitle:17px;
+ --text:18px;
+  }
+
+
+}
+@media screen and (min-width: 1051px) and (max-width: 1550px) {/* ============= TABLETTE */
+
+
+}
+@media screen and (min-width: 801px) {/* ===================================== TABLETTE & DESKTOP */
+    .dt-not {display: none}
+    /* Navtop */
+}

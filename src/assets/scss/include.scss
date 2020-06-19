@@ -1,0 +1,13 @@
+/* STYLE FOR INCLUDES */
+.Navbar{
+    padding-top: var(--s-2);padding-bottom: var(--s-2);
+    a{font-weight: 500;
+        .img-profil{height: 40px;width: 40px;border-radius: 40px;}
+        &:hover{color:var(--secondary);path{fill:var(--secondary)}}
+    }
+    a, svg path{transition:.3s ease-in-out;}
+    .navitem{
+        margin-left: var(--s-1);
+        font-weight: 500;
+    }
+}

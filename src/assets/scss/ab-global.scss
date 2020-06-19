@@ -1,0 +1,153 @@
+/* ============================================================= DOCUMENTATION */
+
+/* This files contains the CSS styling for global elements, such as :
+ *
+ *      - :root data (for CSS variables)
+ *      - Global settings
+ *      - Layout rules (for sections/spaces/alignment/...)
+ *      - Titles & text presets
+ *      - Flexbox presets
+ *      - Colors presets
+ *      - Buttons and anchors presets
+ */
+ @font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir-Roman.eot');
+  src: local('Avenir Roman'), local('Avenir-Roman'),
+      url('../fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Avenir-Roman.woff2') format('woff2'),
+      url('../fonts/Avenir-Roman.woff') format('woff'),
+      url('../fonts/Avenir-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir-Black.eot');
+  src: local('Avenir Black'), local('Avenir-Black'),
+      url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Avenir-Black.woff2') format('woff2'),
+      url('../fonts/Avenir-Black.woff') format('woff'),
+      url('../fonts/Avenir-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir-Medium.eot');
+  src: local('Avenir Medium'), local('Avenir-Medium'),
+      url('../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Avenir-Medium.woff2') format('woff2'),
+      url('../fonts/Avenir-Medium.woff') format('woff'),
+      url('../fonts/Avenir-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+/* ============================================================= ROOT DATA */
+:root{
+  //Colors
+--primary : #37373E;
+--primary-l : #989898;
+--secondary : #18D6B0;
+--secondary-l :#57DFC4;
+--tertiary : #F2F4F5;
+
+  //Font-size
+ --title:60px;
+ --titleh2:30px;
+ --subtitle:25px;
+ --overtitle:20px;
+ --text:18px;
+
+ //padding-margin
+ --s-1:25px;
+ --s-2:50px;
+ --s-3:100px;
+ --s-4:200px;
+
+ //border-radius
+ --border-r:10px;
+}
+
+/* ============================================================= GLOBAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Avenir', sans-serif;
+    font-weight: normal;
+    color:var(--primary);
+    :focus {outline: 0;}
+}
+
+
+/* ============================================================= LAYOUT */
+section, article{padding-top: var(--s-2); padding-bottom:var(--s-2)}
+.site-content{padding-top: 70px}
+
+.justify-img {object-fit: cover; object-position: center;width: 100%;height: 100%;}
+.contain-img {object-fit: contain; object-position: center;width: 100%;}
+
+.text-center {text-align: center}
+.max-w{max-width: 80vw;margin: 0 auto}
+.max-w2{max-width: 60vw;margin: 0 auto}
+
+.col-2{max-width: 38vw;width: 100%}
+.col-3{max-width: 25vw;width: 100%}
+.col-6{max-width: 52vw;width: auto}
+.mt-g{margin-top: 100px}
+
+.titleh2-block{padding-bottom: 50px;}
+/* ============================================================= TITLES & TEXT */
+h1{font-size:var(--title);font-weight: 900;line-height: 1.2;span{font-weight: inherit;color:var(--secondary)}}
+h2,h3{font-size:var(--titleh2)}
+p{font-size: var(--text);color:var(--primary)}
+a{font-size: var(--text);color:var(--primary)}
+/* ============================================================= FLEX PRESETS */
+
+.flex, [class*="flex-"] {display: flex}
+
+.flex-col {flex-direction: column}
+.flex-rev {flex-direction: row-reverse}
+.flex-col-rev {flex-direction: column-reverse}
+
+.justify-center {justify-content: center}
+.justify-end {justify-content: flex-end}
+.justify-start {justify-content: flex-start}
+.justify-around {justify-content: space-around}
+.justify-between {justify-content: space-between}
+.justify-evenly {justify-content: space-evenly}
+
+
+.align-center {align-items: center}
+.align-end {align-items: flex-end}
+.align-start {align-items: flex-start}
+.align-strech {align-items: stretch}
+
+.wrap {flex-wrap: wrap}
+.wrap-reverse {flex-wrap: wrap-reverse}
+/* ============================================================= COLORS */
+body{
+ background-color: var(--tertiary) ;
+}
+.bg-red{
+  background: var(--bg-red)
+}
+.bg-dark{background: var(--primary)}
+/* ============================================================= BUTTONS AND ANCHORS */
+
+button, a {
+    cursor: pointer;
+}
+
+[class*="btn"] {
+    font-size: var(--text);
+    border: 0;
+    background-color: var(--secondary);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    transition: .2s ease;border: none;
+    padding: 10px 20px;
+    &:hover{background: var(--secondary-l);}
+}
