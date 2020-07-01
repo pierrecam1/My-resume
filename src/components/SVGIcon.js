@@ -39,7 +39,6 @@ const getPath = (name, props) => {
             {...props}
             d="M7.584,11.952H.29a.29.29,0,0,0-.29.29v1.353a.29.29,0,0,0,.29.29H7.584V15a.58.58,0,0,0,.99.41l2.079-2.079a.58.58,0,0,0,0-.82L8.574,10.429a.58.58,0,0,0-.99.41Z"
             transform="translate(0 -10.258)"
-            fill='#fff'
           />
         );
         case "node":
@@ -176,6 +175,7 @@ const getPath = (name, props) => {
 const SVGIcon = ({
   name = "",
   style = {},
+  fill = "",
   viewBox = "",
   width = "100%",
   className = "",
@@ -183,6 +183,7 @@ const SVGIcon = ({
 }) => (
   <svg
     width={width}
+    fill={fill}
     style={style}
     height={height}
     className={className}

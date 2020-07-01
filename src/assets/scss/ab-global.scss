@@ -61,10 +61,14 @@
  --text:18px;
 
  //padding-margin
- --s-1:25px;
- --s-2:50px;
- --s-3:100px;
- --s-4:200px;
+ --s-1:10px;
+ --s-2:20px;
+ --s-3:30px;
+ --s-4:40px;
+ --s-5:50px;
+ --s-6:100px;
+ --s-7:150px;
+ --s-8:200px;
 
  //border-radius
  --border-r:10px;
@@ -89,8 +93,11 @@ section, article{padding-top: var(--s-2); padding-bottom:var(--s-2)}
 .contain-img {object-fit: contain; object-position: center;width: 100%;}
 
 .text-center {text-align: center}
+.text-left {text-align: left}
+
 .max-w{max-width: 80vw;margin: 0 auto}
-.max-w2{max-width: 60vw;margin: 0 auto}
+.max-w2{max-width: 60vw;margin: 0 auto;.col-2{max-width: 29vw;width: 100%}
+}
 
 .col-2{max-width: 38vw;width: 100%}
 .col-3{max-width: 25vw;width: 100%}
@@ -100,9 +107,9 @@ section, article{padding-top: var(--s-2); padding-bottom:var(--s-2)}
 .titleh2-block{padding-bottom: 50px;}
 /* ============================================================= TITLES & TEXT */
 h1{font-size:var(--title);font-weight: 900;line-height: 1.2;span{font-weight: inherit;color:var(--secondary)}}
-h2,h3{font-size:var(--titleh2)}
-p{font-size: var(--text);color:var(--primary)}
-a{font-size: var(--text);color:var(--primary)}
+h2,h3{font-size:var(--titleh2);font-size: 500;}
+p{font-size: var(--text);color:var(--primary);font-weight: normal;}
+a{font-size: var(--text);color:var(--primary);font-weight: 500;}
 /* ============================================================= FLEX PRESETS */
 
 .flex, [class*="flex-"] {display: flex}
@@ -142,6 +149,7 @@ button, a {
 
 [class*="btn"] {
     font-size: var(--text);
+    font-weight: 500;
     border: 0;
     background-color: var(--secondary);
     color: white;
@@ -149,5 +157,17 @@ button, a {
     align-items: center;
     transition: .2s ease;border: none;
     padding: 10px 20px;
+    svg{path{fill:white;transition: .2s ease;}}
     &:hover{background: var(--secondary-l);}
 }
+.btn-card{
+  padding: 10px 0;
+  color: var(--secondary);
+  background-color: transparent;
+  svg{path{fill:var(--secondary)}}
+  &:hover{background: transparent;color:var(--primary);
+    svg{path{fill:var(--primary)}}
+  }
+}
+
+

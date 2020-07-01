@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import SVGIcon from '../components/SVGIcon.js'
 import LinkButton from '../components/LinkButton.js';
-
 import imgheader from '../media/img/img-header.jpg';
 
 
@@ -17,7 +16,7 @@ function Header() {
               <p>Passionate about the digital world.<br></br>
               I like to keep abreast of new trends in the job and use them in my design.
               <br></br>Result-driven, I attach great importance to user feedback.</p>
-              <LinkButton link='See my project'/>
+              <LinkButton className={'btn'} link='See my project' fill={'white'}/>
             </div>
             <img className='contain-img col-2' src={imgheader} alt=""/>
           </section>
