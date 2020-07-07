@@ -36,8 +36,11 @@ footer .footer-middle .col-3:last-child{width: auto;}
   #resume{
     h2{margin-top: var(--s-3);}
     div.aside{max-width: 92vw;width: 100%;.img-profil{width: 100%;}}
-    div.col-aside{max-width: 92vw;width: 100%;}}
+    div.col-aside{max-width: 92vw;width: 100%;}
     ul li > p{font-size: calc(var(--text) / 1.2);}
+    .skills-list li{margin: var(--s-1) 0;}
+  }
+    
 
     .project img{min-height:250px;}
     [id*="solution-"]{

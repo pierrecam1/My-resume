@@ -48,28 +48,28 @@ class ResumePage extends Component{
                 <h3>UI / UX Web-designer</h3>
                 <p>Agence W’Com</p>
               </div>
-              <p>Jully 2018 - Today </p>
+              <p>Jully 2018 - Today</p>
             </li></Fade>
             <Fade bottom distance='25px'><li className='flex justify-between'>
               <div >
-                <h3>UI / UX Web-designer</h3>
-                <p>Agence W’Com</p>
+                <h3>Graphic designer</h3>
+                <p>Brico Privé</p>
               </div>
-              <p>Jully 2018 - Today </p>
+              <p>January - June 2018</p>
             </li></Fade>
             <Fade bottom distance='25px'><li className='flex justify-between'>
               <div >
-                <h3>UI / UX Web-designer</h3>
-                <p>Agence W’Com</p>
+                <h3>Freelance Web-designer</h3>
+                <p>Collectif La Forge à Pixels</p>
               </div>
-              <p>Jully 2018 - Today </p>
+              <p>2017 - 2018</p>
             </li></Fade>
             <Fade bottom distance='25px'><li className='flex justify-between'>
               <div >
-                <h3>UI / UX Web-designer</h3>
-                <p>Agence W’Com</p>
+                <h3>Freelance graphic designer</h3>
+                <p>Cap au Large</p>
               </div>
-              <p>Jully 2018 - Today </p>
+              <p>2015 - 2016</p>
             </li></Fade>
           </ul>
           </div>
