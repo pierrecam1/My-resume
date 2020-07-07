@@ -41,7 +41,7 @@ const SwithItem = () => {
               <li className="navitem">Resume</li>
             </Link>
             <li className="navitem">
-              <a href='https://www.linkedin.com/in/pierre-cammas-11b132165/'target="_blank" rel="noopener noreferrer">
+              <a href='https://www.linkedin.com/in/pierre-cammas/'target="_blank" rel="noopener noreferrer">
               <SVGIcon
               name="linkedin"
               width={16}
