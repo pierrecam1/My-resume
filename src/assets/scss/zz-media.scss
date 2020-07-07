@@ -32,9 +32,12 @@ footer .footer-middle .col-3:last-child{width: auto;}
       svg{height: 25px !important;width: 25px !important;}
     }
 }
+
   #resume{
+    h2{margin-top: var(--s-3);}
     div.aside{max-width: 92vw;width: 100%;.img-profil{width: 100%;}}
     div.col-aside{max-width: 92vw;width: 100%;}}
+    ul li > p{font-size: calc(var(--text) / 1.2);}
 
     .project img{min-height:250px;}
     [id*="solution-"]{

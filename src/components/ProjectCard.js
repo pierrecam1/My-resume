@@ -32,8 +32,7 @@ render(){
   return (
     <section className='projects max-w2 justify-center text-center'>
         <div className="container-h2 revealInterval">
-        <Fade bottom distance='25px'><h2>Last project</h2>
-        <p>Little description about the project</p></Fade>
+        <Fade bottom distance='25px'><h2>Last project</h2></Fade>
         </div>
         <div className="flex justify-between text-left wrap">
             {card}

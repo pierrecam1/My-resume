@@ -28,8 +28,7 @@ header{
 
 .projects-card{
     margin-bottom: var(--s-5);
-    h3{margin-top: var(--s-1);}
-    
+    h3{margin-top: var(--s-1);}    
 }
 /* ============================================================= Project Page */
 [id*="solution-"]{
@@ -65,7 +64,7 @@ header{
         position: relative;
         text-align: center;
         display: block;
-        padding: var(--s-5);
+        padding: var(--s-5) var(--s-1);
         svg{display: none}
         &:first-child{background-color: var(--secondary-l);}
         &:hover{background-color: var(--primary);}
