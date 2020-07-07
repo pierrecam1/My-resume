@@ -15,7 +15,8 @@ header{
     h1{margin-bottom: var(--s-1);}
     h1 + p{margin-bottom: var(--s-1);}
     .text-header{margin-bottom: var(--s-2);}
-    img{height: 600px;}
+    img, .project img{min-height: 500px;}
+    
     hr{border-top:var(--primary-l) 1px solid}
     .container-techno{padding: var(--s-1) 0;
         p{color:var(--primary-l);font-weight: 500;}
@@ -27,5 +28,72 @@ header{
 
 .projects-card{
     margin-bottom: var(--s-5);
-    h3{margin-top: var(--s-2);margin-bottom:  var(--s-1);}
+    h3{margin-top: var(--s-1);}
+    
+}
+/* ============================================================= Project Page */
+[id*="solution-"]{
+    .titlecontainer{padding-bottom:var(--s-5)}
+    h2{font-size:var(--titleproject);font-weight: 900;line-height: 1.2;span{display:block;font-weight: inherit;color:var(--secondary)}}
+    padding: var(--s-6) 0;
+    img.col-2{max-height: 500px;}
+}
+.projec-hr{border:none;border-bottom: solid #D5D5D5 0.1px;}
+.project{
+    background-color: var(--black);padding-top:var(--s-5);
+    h1{text-align: center;color:var(--tertiary);font-size: var(--titleproject);span{font-size:var(--overtitle);display: block;}}
+}
+
+
+#solution-build{div{margin-top: var(--s-6);}
+    ul li{width: 40%;list-style: none; display: flex; flex-direction: column;p{font-size: 15px;}
+    &:not(:last-child){margin-bottom: var(--s-2);}
+    img{width: 60px;height: 60px;margin-bottom: var(--s-2);}
+    }
+}
+#solution-contact-me{
+    background-color: var(--black);
+    h2{color:white;padding-bottom: var(--s-3);}
+    .btn{background-color: white;}
+}
+
+.nextprevproject{
+    padding: 0;
+    display: flex;
+    .btn-select-project{
+        width: 50%;
+        position: relative;
+        text-align: center;
+        display: block;
+        padding: var(--s-5);
+        svg{display: none}
+        &:first-child{background-color: var(--secondary-l);}
+        &:hover{background-color: var(--primary);}
+      }
+}
+/* ============================================================= Resume Page */
+
+#resume{
+    h1{font-size:var(--titleh2);text-align: center;margin-top: var(--s-1);span{display: block;font-weight: 500;color: var(--primary);font-size: var(--subtitle);}}
+    h2{margin-bottom: var(--s-3);font-size: calc(var(--title) / 1.3);
+    
+    }
+    ul{list-style: none;
+    li{
+        font-size: var(--text);color:var(--ctext);font-weight: 500;line-height: 1.4;
+
+    }}
+    .aside{max-width: 338px;span,a{display: block;padding: var(--s-1) 0;
+        img{margin-right: var(--s-1);}
+        &:not(:last-child){border-bottom: solid .5px #D5D5D5;}}}
+    .col-aside{max-width: calc(100% - 390px);width: 100%;>div:not(:first-child){margin: var(--s-5) 0;}}
+    .experience-list{
+        li{padding: var(--s-1) 0;
+        &:not(:last-child){border-bottom: solid .5px #D5D5D5;}
+        }
+    }
+    .skills-list{
+        h3{padding: var(--s-1) 0;margin-bottom: var(--s-1);;border-bottom: solid .5px #D5D5D5;}
+        
+    }
 }

@@ -8,34 +8,63 @@ footer .footer-middle .col-3:last-child{width: auto;}
 @media screen and (max-width: 800px) {/* ===================================== MOBILE */
   :root{
   //Font-size
- --title:30px;
-  --titleh2:25px;
+ --title:35px;
+ --titleproject:28px;
+  --titleh2:23px;
   --subtitle:20px;
  --overtitle:15px;
  --text:16px;
   }
+
   
   // LAYOUT
   .max-w{max-width: 92vw;margin: 0 auto}
-  .max-w2{max-width: 92vw;margin: 0 auto}
+  .max-w2{max-width: 92vw;margin: 0 auto;.col-2{max-width: 100%;width: 100%}}
   .col-2{max-width: 100%;width: 100%}
   .mt-g{margin-top: 100px}
   .col-3{max-width: 92vw;width: 100%}
   .col-6{max-width: 92vw;width: 100%}
+  .max-w3{max-width: 92vw;margin: 0 auto;.col-2{max-width: 100%;width: 100%};.col-3{max-width: 100%;width: 100%}}
 
+  //Page
+  header{
+    .container-techno{padding: var(--s-1) 0;
+      svg{height: 25px !important;width: 25px !important;}
+    }
+}
+  #resume{
+    div.aside{max-width: 92vw;width: 100%;.img-profil{width: 100%;}}
+    div.col-aside{max-width: 92vw;width: 100%;}}
 
+    .project img{min-height:250px;}
+    [id*="solution-"]{
+      padding: var(--s-2) 0!important;
+      .titlecontainer{padding-bottom:var(--s-2) }
+    }
+    #solution-build{
+      div{margin: var(--s-3) 0!important; + span{margin-bottom: var(--s-3);}}
+      ul li img{height: 25px!important;width: 25px!important;}}
+    
 
 }
 @media screen and (min-width: 801px) and (max-width: 1050px) {/* ============= TABLETTE */
   :root{
   //Font-size
  --title:35px;
-  --titleh2:28px;
-  --subtitle:25px;
+ --titleproject:28px;
+  --titleh2:24px;
+  --subtitle:22px;
  --overtitle:17px;
  --text:18px;
   }
+    // LAYOUT
+    .max-w{max-width: 90vw;margin: 0 auto}
+    .max-w2{max-width: 90vw;margin: 0 auto;.col-2{max-width: 44vw;width: 100%}}
+    .max-w3{max-width: 90vw;margin: 0 auto;.col-2{max-width: 40vw;width: 100%};.col-3{max-width: 38vw;width: 100%}}
 
+  #resume{
+    div.aside{max-width: 30vw;width: 100%;.img-profil{width: 100%;}}
+    div.col-aside{max-width: 55vw;width: 100%;.col-2{width: 100%;max-width: 100%;}}}
 
 }
 @media screen and (min-width: 1051px) and (max-width: 1550px) {/* ============= TABLETTE */

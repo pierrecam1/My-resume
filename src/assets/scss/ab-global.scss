@@ -52,9 +52,12 @@
 --secondary : #18D6B0;
 --secondary-l :#57DFC4;
 --tertiary : #F2F4F5;
+--black : #161616;
+--ctext: #737386;
 
   //Font-size
  --title:60px;
+ --titleproject:45px;
  --titleh2:30px;
  --subtitle:25px;
  --overtitle:20px;
@@ -94,10 +97,13 @@ section, article{padding-top: var(--s-2); padding-bottom:var(--s-2)}
 
 .text-center {text-align: center}
 .text-left {text-align: left}
+.text-right {text-align: right}
 
 .max-w{max-width: 80vw;margin: 0 auto}
-.max-w2{max-width: 60vw;margin: 0 auto;.col-2{max-width: 29vw;width: 100%}
-}
+.max-w2{max-width: 60vw;margin: 0 auto;.col-2{max-width: 29vw;width: 100%}}
+.max-w3{max-width: 49vw;margin: 0 auto;.col-2{max-width: 26vw;width: 100%};.col-3{max-width: 18vw;width: 100%}}
+
+
 
 .col-2{max-width: 38vw;width: 100%}
 .col-3{max-width: 25vw;width: 100%}
@@ -108,8 +114,10 @@ section, article{padding-top: var(--s-2); padding-bottom:var(--s-2)}
 /* ============================================================= TITLES & TEXT */
 h1{font-size:var(--title);font-weight: 900;line-height: 1.2;span{font-weight: inherit;color:var(--secondary)}}
 h2,h3{font-size:var(--titleh2);font-size: 500;}
-p{font-size: var(--text);color:var(--primary);font-weight: normal;}
+p{font-size: var(--text);color:var(--ctext);font-weight: 500;line-height: 1.4;}
 a{font-size: var(--text);color:var(--primary);font-weight: 500;}
+
+.container-h2{margin-bottom: var(--s-6);}
 /* ============================================================= FLEX PRESETS */
 
 .flex, [class*="flex-"] {display: flex}
@@ -137,6 +145,7 @@ a{font-size: var(--text);color:var(--primary);font-weight: 500;}
 body{
  background-color: var(--tertiary) ;
 }
+
 .bg-red{
   background: var(--bg-red)
 }
@@ -157,7 +166,7 @@ button, a {
     align-items: center;
     transition: .2s ease;border: none;
     padding: 10px 20px;
-    svg{path{fill:white;transition: .2s ease;}}
+    svg{margin-left: var(--s-1);path{fill:white;transition: .2s ease;}}
     &:hover{background: var(--secondary-l);}
 }
 .btn-card{
@@ -167,6 +176,25 @@ button, a {
   svg{path{fill:var(--secondary)}}
   &:hover{background: transparent;color:var(--primary);
     svg{path{fill:var(--primary)}}
+  }
+}
+.btn-project{
+  color: var(--primary);
+  background-color: white;
+  svg{path{fill:var(--primary)}}
+  &:hover{background: var(--secondary);color:white;
+    svg{path{fill:white}}
+  }
+}
+.btn-nav{
+  display: flex;
+  flex-direction: row-reverse;
+  color: var(--primary);
+  padding: 0;
+  background-color:transparent;
+  svg{margin: 0 var(--s-1) 0 0;transform: rotate(180deg);path{fill:var(--primary);}}
+  &:hover{background-color:transparent;color:var(--secondary);
+    svg{path{fill:var(--secondary);}}
   }
 }
 

@@ -1,27 +1,56 @@
 import React from 'react';
 import SVGIcon from '../components/SVGIcon.js'
-import imgprofil from '../media/img/profil.jpg';
-
-
+import imgprofil from '../media/img/profil.jpg'
+import LinkButton from '../components/LinkButton.js'
+import {Link, useLocation } from 'react-router-dom'
 
 
 
 function Navbar() {
+let location = useLocation();
+const slug = location.pathname;
+let valueClass = '';
+if((slug !== '/') && (slug !== '/resume') && (slug !== '/project')){
+   valueClass = 'black';
+}else{
+   valueClass = 'white';
+}
+const SwithItem = () => {
+  if(slug === '/resume'){
+    return(
+      <LinkButton link='Back to home' path='/' className={'btn-nav'}></LinkButton>
+    )
+  }else{
+    return(
+      <Link to="/">
+        <li className="flex align-center">
+        <img className='justify-img img-profil' src={imgprofil} alt="Pierre CAMMAS developer Fullstack" style={{marginRight: 15 + 'px'}}/>
+        Pierre CAMMAS</li>
+      </Link>
+    )
+  }
+}
   return (
-    <div className="Navbar">
-        <nav className='flex justify-between max-w align-center'>
-            <a href="#" className="flex align-center"><img className='justify-img img-profil' src={imgprofil} alt="Pierre CAMMAS Fullstack" style={{marginRight: 15 + 'px'}}/>Pierre CAMMAS</a>
-          <div>
-            <a href="#" className="navitem">Resume</a>
-            <a href="#" className="navitem">
-            <SVGIcon
-            name="linkedin"
-            width={16}
-            height={16}/>
-            </a>
+    <nav className={"Navbar " + `${valueClass}`}>
+        <ul className='flex justify-between max-w align-center'>
+         
+            {SwithItem()}
+         
+          <div className='flex'>
+            <Link to='/resume'>
+              <li className="navitem">Resume</li>
+            </Link>
+            <li className="navitem">
+              <a href='https://www.linkedin.com/in/pierre-cammas-11b132165/'target="_blank" rel="noopener noreferrer">
+              <SVGIcon
+              name="linkedin"
+              width={16}
+              height={16}/>
+              </a>
+            </li>
           </div>
-        </nav>
-    </div>
+        </ul>
+    </nav>
   );
 }
 
